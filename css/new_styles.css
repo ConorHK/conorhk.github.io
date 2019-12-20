@@ -1,10 +1,10 @@
 
 dy {
-    background: #3F3F3F;
+    background: #0F1214;
 }
 
 .sidebar {
-    background: #3F3F3F;
+    background: #0F1214;
 }
 
 #sidebar .heading {
@@ -39,7 +39,7 @@ dy {
 }
 
 #skills {
-    background: #681DBD;
+    background: #A24E3C
 }
 
 #skills .progress .bg-blue {
@@ -47,7 +47,7 @@ dy {
 }
 
 #experience {
-    background: #4A8714;
+    background: #8ECCD2;
 }
 
 #experience a {
@@ -64,7 +64,7 @@ section.blue {
 }
 
 #contact {
-    background: #6449D9 !important;
+    background: #0F7787 !important;
 }
 
 .language {
