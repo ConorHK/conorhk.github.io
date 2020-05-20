@@ -16,7 +16,7 @@ dy {
 }
 
 #sidebar .text-muted {
-    color: white !important; 
+    color: white !important;
 }
 
 #sidebar .fas {
@@ -55,12 +55,12 @@ dy {
     font-weight: bold;
 }
 
-section.projects {
+#section.services {
     background: #74AF3A;
 }
 
 section.blue {
-    background:  #00BDC1 !important; 
+    background:  #00BDC1 !important;
 }
 
 #contact {
