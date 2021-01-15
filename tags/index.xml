@@ -5,10 +5,6 @@
     <link>https://conorknowles.com/tags/</link>
     <description>Recent content in Tags on Conor Knowles</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    
-	<atom:link href="https://conorknowles.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-gb</language><atom:link href="https://conorknowles.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
