@@ -6,13 +6,25 @@ body {
 	line-height: 0.7;
 }
 
+h3 {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.subsection {
+	padding: 2px 4px;
+  border: 1px solid #3f3639;
+  width: 1000px;
+  background-color: #1b1b1b;
+}
+
 a {
 	color: #baba9e;
 	text-decoration: none;
 }
 
 a:active,a:hover,a:focus {
-	color: #807b64;
+	color: #eaeace;
 	text-decoration: none;
 }
 
