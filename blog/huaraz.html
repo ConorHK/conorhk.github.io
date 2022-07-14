@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="../static/css/style.css" rel="stylesheet">
+		<title>
+			BLOG ENTRY #X
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+<h1>High altitude Huaraz</h1>
+<p>I am currently sweltering in a homely restaurant outside Huaraz, Peru (the Switzerland of South America). I've been in high altitudes before but the effect of it here feels quite intense. I think its around 3100m. Lethargic and light is tthe best way to summarise it. </p>
+<p>The benefits of high altitude living appeal to me, youd become a super hero when back at sea level.</p>
+<p>We're headed to an hour hike a couple hous drive away to see some glacier called Pastrorui according to Elmer. I've never seen a glacier so I'm pretty buzzed. </p>
+<p>Anyway this post is just a life snapshot, and proof of concept for my blog script. It's in its infant stages, at the moment it just reads in a header and footer and converts markdown to html. I want it to index posts with titles and dates, and work agnostic of directory position. Stuff like tab titles should be incremented properly too. Still, I wrote it on a 22 hour bus to Mancora on Termux on my phone. The current condition is good enough, all things given.</p>
+<p>I'm gonna include the code snippet below just to see how python-markdown handles code snippets more than anything. Meta-snippet haha.</p>
+<p>```</p>
+<h1>!/usr/bin/env python3</h1>
+<p>import markdown
+import sys</p>
+<p>input_file = sys.argv[1]
+filename = input_file.split(".")[0].split("/")[-1]
+output_file = f"../conorhk.github.io/blog/{filename}.html"
+print(output_file)</p>
+<p>with open(input_file, 'r') as f:
+    text = f.read()
+    html = markdown.markdown(text)</p>
+<p>def write_with_headers(output_file):
+    with open(output_file, 'w') as f:
+        with open("resources/header.html", "r") as header:
+            for line in header:
+                f.write(line)
+        f.write(html)
+        with open("resources/footer.html", "r") as footer:
+            for line in footer:
+                f.write(line)</p>
+<p>write_with_headers(output_file)
+```</p>
+	</body>
+</html>
